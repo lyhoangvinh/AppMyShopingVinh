@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lyhoangvinh.appbanhang">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.ManHinhChao.ManHinhChaoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.TrangChu.TrangChuActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.DangNhap_DangKy.DangNhapActivity"
+            android:screenOrientation="portrait"
+            android:label="Đăng nhập/Đăng ký">
+
+        </activity>
+        
+        <activity android:name="com.lyhoangvinh.appbanhang.View.HienThiSanPhamTheoDanhMuc.HienThiSanPhamTheoDanhMucActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.ChiTietSanPham.ChiTietSanPhamActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.DanhGia.ThemDanhGiaActivity"
+            android:theme="@style/Base.Theme.AppCompat.Dialog"
+            >
+
+        </activity>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.DanhGia.DanhSachDanhGiaActivity">
+
+        </activity>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.GioHang.GioHangActivity"
+            android:label="Giỏ hàng"
+            >
+
+        </activity>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.ThanhToan.ThanhToanActivity"
+            android:label="Thanh toán"/>
+
+        <activity android:name="com.lyhoangvinh.appbanhang.View.TimKiem.TimKiemActivity" android:screenOrientation="portrait"/>
+
+
+    </application>
+
+</manifest>
